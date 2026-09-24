@@ -1,0 +1,41 @@
+{
+  "datasets": [
+    "IndianPines",
+    "PaviaU",
+    "Salinas"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "protocols": [
+    "random",
+    "spatial"
+  ],
+  "variants": [
+    "sparc",
+    "pooled_linear",
+    "query",
+    "full",
+    "no_adaptive",
+    "no_evidence",
+    "no_stress"
+  ],
+  "patch_size": 15,
+  "block_size": 32,
+  "channels": 64,
+  "decision_dim": 128,
+  "query_depth": 2,
+  "query_heads": 4,
+  "query_dropout": 0.1,
+  "epochs": 150,
+  "reliability_epochs": 20,
+  "batch_size": 64,
+  "lr": 0.0003,
+  "weight_decay": 0.0001,
+  "coverage": 0.9,
+  "stress_samples": 4096,
+  "note": "Frozen protocol manifest. CLI entrypoints use these defaults. A run records effective config.json.",
+  "eval_batch_size": 256
+}
